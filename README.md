@@ -1,37 +1,37 @@
-Dieses Repository ist für diejenigen, die noch ein paar Hilfestellungen benötigen. 
-
+I changed this to English
+This repository is for those who still need some help. 
 # pongGame - Beginner 
-Aufgabe ist es, das Game `Pong` zu programmieren. Dabei wollen wir mit zufälliger Bewegung und User Input der Mouse ein simples Spiel programmieren. Diese Grundbausteine werden uns später helfen, ein eigenes Mouse-Game zu entwickeln.
+The task is to program the game `Pong`. We want to program a simple game with random movement and user input of the mouse. These basic building blocks will later help us to develop our own mouse game.
 
 ## Pong Game
 ![](/img/pong.png)
 
-Pong wurde 1972 von Atari veröffentlicht und war das erste kommerziell erfolgreiche Spiel. Heute gilt Pong als das Spiel, mit dem die Videospielindustrie ihren Anfang nahm.
+Pong was released by Atari in 1972 and was the first commercially successful game. Today, Pong is considered the game that started the video game industry.
 
-Das Spielprinzip von Pong ist simpel: Ein Punkt (Ball) bewegt sich auf dem Bildschirm hin und her. Jeder der beiden Spieler\*innen steuert einen senkrechten Strich (Schläger), den er mit einem Balken (Paddle) nach oben und unten verschieben kann. Lässt man den Ball am Schläger vorbei, erhält der/die Gegner\*in einen Punkt. [Original Atari PONG (1972)](https://www.youtube.com/watch?v=fiShX2pTz9A)
+The game principle of Pong is simple: A dot (ball) moves back and forth on the screen. Each of the two players controls a vertical line (racket), which he can move up and down with a bar (paddle). If the ball passes the paddle, the opponent receives a point. [Original Atari PONG (1972).](https://www.youtube.com/watch?v=fiShX2pTz9A)
 
 ## Setup
 ![](/img/code.png)
-1. Als Erstes müsst ihr ein eigenes Repository auf Github erstellen (nur eine Person). 
-2. Danach müsst ihr dieses noch auf GitHub für die zweite Person freigeben unter `Settings-> Manage Access -> Direct Access -> Invite Members`
-3. Nun sollten beide das noch leere Repository bearbeiten und clonen können. 
+1. First, you need to create your own repository on Github (only one person).  
+2. After that you have to share it with the second person on GitHub under `Settings-> Manage Access -> Direct Access -> Invite Members`.
+3. Now both should be able to edit and clone the still empty repository. 
 
-Nachdem ihr ein Repository erstellt habt, müsst ihr noch 3 Dateien erstellen und eurem Repository hinzufügen (Am besten lokal in eurem geclonten Repository und dann pushen). Ihr könnt dies selbst aufsetzen oder den Code aus den entsprechenden Dateien aus diesem Repository kopieren.  
+After you have created a repository, you still need to create 3 files and add them to your repository (Preferably locally in your cloned repository and then push). You can set this up yourself or copy the code from the appropriate files from this repository.  
 
-1. `index.html` -> Hier wird das Spiel angezeigt 
-2. `pong.js` -> Hier schreiben wir die Spiellogik bzw. den Code
-3. `style.css` -> Hier sind die Styles für das html-file definiert
+1. `index.html` -> Here the game is displayed 
+2. `pong.js` -> Here we write the game logic resp. the code
+3. `style.css` -> Here the styles for the html-file are defined
 
-### Hilfestellungen
-Ihr findet die Hilfestellungen in der Datei `pong.js`. Kopiert euch diese direkt in eurer Projekt oder schaut nach, wenn ihr ein paar Tipps braucht. 
+### Assistance
+You can find the help in the file `pong.js`. Copy them directly into your project or look them up if you need some tips. 
 
-### Pong Game anzeigen 
-Um zu sehen was ihr programmmiert habt, öffnet ihr die index.html Datei in eurem Browser (Rechtsklick oder Drag'n'Drop). 
-Dies könnte dann so aussehen: 
+### Show Pong Game 
+To see what you have programmed, open the index.html file in your browser (right click or drag'n'drop). 
+This could look like this: 
 ![](/img/index.jpg)
 
 ## Additional
-Falls ihr möchtet, könnt ihr euer Pong Game beliebig erweitern oder verändern. Ihr seid nicht an den Stil der 70er Jahre gebunden.
-* Versucht euren eigenen Stil dem Pong Game hinzuzufügen (Bsp. verschwommene Bewegungen, der Ball zeichnet eine Spur, bunte Farben, etc.)
-* Lasst den Ball immer schneller und das Spiel somit immer schwieriger werden.
-* Programmiert einen Gegenspieler\*in. Der Einfachheit halber ist diese\*r Gegenspieler\*in "dumm" und wird ebenfalls von euch bedient. 
+If you want, you can extend or change your Pong game as you like. You are not bound to the style of the 70s.
+* Try to add your own style to the pong game (e.g. blurred movements, the ball draws a track, bright colors, etc.).
+* Let the ball become faster and faster and the game more and more difficult.
+* Program an opponent\*in. For the sake of simplicity, this opponent is "dumb" and will also be operated by you. 
