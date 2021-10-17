@@ -4,4 +4,9 @@ html, body {
   }
   canvas {
     display: block;
+    font-family: 'Saira Extra Condensed', sans-serif;
   }
+  p {
+    font-family: 'Saira Extra Condensed', sans-serif;
+  }  
+  
