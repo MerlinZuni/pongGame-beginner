@@ -6,6 +6,7 @@ var score = 0
 //size ball
 var d = 50
 
+let pingpong
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -40,7 +41,7 @@ function draw() {
   xBall += xSpeed;
   fill(73, 162, 178);
  
-  ellipse(xBall, yBall, d);
+  pingpong = ellipse(xBall, yBall, d);
   // TO DO 2: Schaffst du es, dass sich der Ball frei bewegt?
   // Can you make the ball move freely?
 
@@ -50,7 +51,7 @@ function draw() {
   if(xBall > windowWidth - d/2 || xBall < d/2 ){
     xSpeed = -xSpeed;
     if(yBall > windowWidth - d/2 || yBall < d/2 ){
-      ySpeed *= -ySpeed;
+      ySpeed = -ySpeed;
     }  
   } 
   // TO DO 3: Lass den Ball von den Seitenrändern abprallen (windowWidth/windowHeight)
