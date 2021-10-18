@@ -21,7 +21,7 @@ let tempo = 12;
 // ball moves random
 xBall = random(0, width);
 yBall = random(0, height);
-}
+
 function draw() {
   // Background
   background(2, 3, 5);
