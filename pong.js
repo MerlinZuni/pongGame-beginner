@@ -2,14 +2,16 @@ var xBall = Math.floor(Math.random() * 300) + 50;
 var yBall = 50;
 var xSpeed = (2, 7);
 var ySpeed = (-7, -2);
-var score = 0
+var score = 0;
+let myPaddle;
 
-// opponent paddle
+// opponent paddle variables
 let fedX = 0;
 let fedW = 120;
 let fedH = 10;
 let federer;
 let tempo = 12;
+
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -19,10 +21,10 @@ function setup() {
 function draw() {
   // Background
   background(2, 3, 5);
-  fill(255);
+  //fill(255);
   
   // Score
-  fill(45, 100, 105)
+  fill(45, 100, 105);
   textSize(48);
   text("SCORE: " + score, 20, 55);
 
@@ -30,7 +32,7 @@ function draw() {
   // I Made the bar follow the mouse on the x-axis.
   let c = color(255, 204, 0); // color canary-yellow
   fill(c);
-  rect(mouseX, windowHeight-15, fedW, fedH);
+  myPaddle = rect(mouseX, windowHeight-15, fedW, fedH);
 
   // I've created a second paddle on the top
   let b = color(0, 204, 255); // color blue
@@ -39,11 +41,11 @@ function draw() {
   // I'm trying to get the paddle to move back and forth.
   // currently moves right to left...
   fedX = fedX - tempo;
-  push();
+  //push();
   if (fedX < 0) {
     fedX = width;
     //fedX += tempo;
-    pop();
+    //pop();
   } 
 
 
