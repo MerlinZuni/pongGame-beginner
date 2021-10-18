@@ -18,6 +18,11 @@ let fedH = 10;
 let federer;
 let tempo = 12;
 
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  fedX = width / 2;
+}
+
 // ball moves random
 xBall = random(0, width);
 yBall = random(0, height);
