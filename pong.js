@@ -2,7 +2,8 @@ var xBall = Math.floor(Math.random() * 300) + 50;
 var yBall = 50;
 var xSpeed = (2, 7);
 var ySpeed = (-7, -2);
-var score = 0;
+var scoreFed = 0;
+var scoreMe = 0;
 let myPaddle;
 
 // opponent paddle variables
@@ -23,10 +24,15 @@ function draw() {
   background(2, 3, 5);
   //fill(255);
   
-  // Score
+  // Score Blue Federer
   fill(45, 100, 105);
   textSize(48);
-  text("SCORE: " + score, 20, 55);
+  text("SCORE: " + scoreFed, 20, 55);
+
+    // Score Blue Me
+    fill(255, 204, 0);
+    textSize(48);
+    text("SCORE: " + scoreMe, windowWidth-300, 55);
 
   // TO DO 1: Bringe den Balken dazu der Maus auf der x-Achse zu folgen. 
   // I Made the bar follow the mouse on the x-axis.
