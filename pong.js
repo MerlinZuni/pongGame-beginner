@@ -39,12 +39,12 @@ function draw() {
   // Score Blue Federer
   fill(45, 100, 105); // color blue
   textSize(48);
-  text("SCORE: " + score, 20, 55);
+  text("Roger Federer: " + scoreFed, 20, 55);
 
   // Score yellow My score
   fill(255, 204, 0); // color yellow
   textSize(48);
-  text("SCORE: " + score, windowWidth-300, 55);
+  text("My Score: " + scoreMe, windowWidth-300, 55);
 
   // TO DO 1: Bringe den Balken dazu der Maus auf der x-Achse zu folgen. 
   // I Made the bar follow the mouse on the x-axis.
@@ -89,8 +89,12 @@ function draw() {
   // TO DO 4: Lass den Ball vom Balken aprallen, falls sie sich berühren
   // 1 if statements on our own how to calculate
 
-  // trying to change the score
-  if (yBall > windowHeight && yBall < 0) {
-    score = score + 1;
+  // Add a point for Roger Federer
+  if (yBall > windowHeight - d/2) {
+    scoreFed = scoreFed +1 ;
+  }
+  // Add a point for Me
+  if (yBall < d/2) {
+    scoreMe = scoreMe+1;
   }
 }  
