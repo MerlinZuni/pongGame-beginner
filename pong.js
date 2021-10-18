@@ -16,7 +16,7 @@ let fedX = 0;
 let fedW = 120;
 let fedH = 10;
 let federer;
-let tempo = 12;
+let tempo = 24;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -57,11 +57,12 @@ function draw() {
   federer = rect(fedX , 0, fedW, fedH);
   // I'm trying to get the paddle to move back and forth.
   // currently moves right to left...
-  fedX = fedX - tempo;
+  fedX = fedX + tempo;
   //push();
-  if (fedX < 0) {
-    fedX = width;
-    //fedX += tempo;
+  if (fedX < 0 || fedX > width) {
+    
+    //fedX = width;
+    tempo = -tempo;
     //pop();
   } 
 
